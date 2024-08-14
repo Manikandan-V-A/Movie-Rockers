@@ -1,0 +1,181 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.h1 {
+    color: rgb(203, 205, 207);
+}
+
+.d0-page h2 {
+    margin-top: 10%;
+    text-align: center;
+}
+
+.a-page {
+    color: rgb(91, 157, 243);
+    text-align: center;
+}
+
+.a-page:hover {
+    color: rgba(255, 255, 255, 0.856);
+    text-align: center;
+}
+
+.d2 {
+    filter: brightness(0.9);
+    background-size: cover;
+    background-image: url("./asset/Movies/Netflix-Background\ \(1\).jpg");
+    height: 100vh;
+}
+
+.d0-page {
+    /* border: 1px solid rgba(255, 255, 255, 0.747); */
+    width: 30%;
+    height: 50%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.671);
+}
+
+.menu-main-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 70%;
+    width: 100%;
+}
+
+@media only screen and (max-width:900px) {
+    .d0-page {
+        /* border: 1px solid rgba(255, 255, 255, 0.747); */
+        width: 80%;
+        height: 50%;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.671);
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .d0-page {
+        width: 80%;
+        height: 50%;
+    }
+
+    .d0-page h2 {
+        margin-top: 15%;
+    }
+}
+
+
+
+/* ----------------------------- Navbar --------------------------------------------- */
+
+.menu-main {
+    position: fixed;
+    top: 0;
+    left: -350px;
+    width: 350px;
+    height: 100%;
+    background-color: #000000e3;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+.menu-main a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.menu-main a:hover {
+    color: #f1f1f1;
+}
+
+.menu-main .close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.menu-main.open {
+    left: 0;
+}
+
+.icon,
+.icon1 {
+    font-size: 24px;
+    cursor: pointer;
+}
+.icon {
+    margin: 15px;
+    color: rgb(255, 255, 255);
+}
+
+.Navbar-main {
+    background-color: #00000081;
+    color: white;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    border: 3px solid white;
+}
+
+h1 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+.search-bar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: transparent;
+    z-index: 100;
+    padding: 5px;
+}
+
+.search-bar input[type="text"] {
+    width: 200px;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+
+@media only screen and (max-width: 450px) {
+    .icon {
+        margin-left: -2px;
+        font-size: 18px;
+    }
+    .icon1{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .h1 {
+        font-size: 25px;
+    }
+}
